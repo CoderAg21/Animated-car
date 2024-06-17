@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width = device-width,initial scale=1.0"
+    <meta name="" content="">
+    <title></title>
+  
+  <iframe src="sound.mp3" width="0" height="0" frameborder="0" allowfullscreen></iframe>
+           
+    <style type="text/css" media="all">
+      body{
+        margin: 0;
+        padding: 0;
+      overflow: hidden;
+      
+      }
+      .li{
+        transform: rotate(93deg);
+      position: absolute;
+      top: 500px;
+      z-index: 1;
+      
+      
+      }
+     .highwa{
+       transform: rotate(90deg);
+       position: relative;
+       height: 2030px;
+       left: -1295px;
+       z-index: -1;
+       background-image: cover;
+       animation-name: highwa;
+       animation-duration: 5;
+       animation-iteration-count: 12;
+     }
+     /*@keyframes highwa{*/
+     /*  form{*/
+     /*    transform: translateY(100px);*/
+     /*  }*/
+     /*  to{*/
+     /*    transform: translateY(1000px);*/
+     /*  }*/
+     /*}*/
+  
+   .secondhighway{
+   position: absolute;
+   z-index: 1;
+  transform: rotate(90deg);
+  top: -10px;
+  bottom: 34000px;
+  left: -34900px;
+  width: 70000px;
+ opacity: 0.25;
+ animation-name: moving;
+ animation-duration: 0.7s;
+ /*animation-fill-mode: ease-out;*/
+ animation-iteration-count: infinite;
+ 
+     }
+     @keyframes moving{
+       form{
+         /*top: 1010000px;*/
+         /*transform: translateY(10px);*/
+       }
+       to{
+         /*bottom: 34000px;*/
+         top: 34000px;
+         /*transform: translateY(-800px);*/
+       }
+     }
+     .wheels{
+       z-index: 1;
+       width: 100px;
+       position: absolute;
+       left: 225px;
+       top: 720px;
+              animation-name: rotation;
+      /*animation-delay: 5s;*/
+       animation-duration: .2s;
+       animation-iteration-count: infinite;
+  z-index: 1;
+       
+     }
+     .wheel{
+       position: absolute;
+       top: 313px;
+       left: 240px;
+       width: 110px;
+       z-index: 1;
+       /*animation-delay: 5s;*/
+       animation-name: rotation;
+       animation-duration: .2s;
+       animation-iteration-count: infinite;
+  z-index: 1;
+     }
+     @keyframes rotation{
+       0%{
+         transform: rotate(0deg);
+          /*transform: translateX(-20px);*/
+       }
+       50%{
+         transform: rotate(180deg);
+         /*transform: translateX(5px);*/
+       }
+       100%{
+         transform: rotate(360deg);
+       }
+     }
+ 
+       
+    /*  #completed{*/
+    /*  position: absolute;*/
+    /*  animation-name: completed-work;*/
+    /*  animation-delay: 0s;*/
+    /*  animation-duration: 5s;*/
+    /*  animation-iteration-count: 1;*/
+    /*  }*/
+    /*@keyframes completed-work{*/
+    /*  0%{*/
+    /*    left: 300px;*/
+     
+    /*  }*/
+    /*  100%{*/
+      
+    /*    left: 0px;*/
+      
+
+    /*  }*/
+          .good{
+      animation-name: complete-work;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      
+    }
+    @keyframes complete-work{
+      from{
+        /*transform: translateX(-5px);*/
+        transform: translateY(-950px);
+      }
+      to{
+      /*transform: translateX(-5px)*/
+      transform: translateY(2600px)
+      }
+    }
+ 
+       
+       
+       
+    /*    @keyframes complete-work{*/
+    /*  0%{*/
+    /*    transform: translateX(-5px);*/
+    /*    transform: translateY(-900px);*/
+    /*  }*/
+    /*  50%{*/
+    /*    transform: translateX(10px);*/
+    /*  }*/
+    /*  100%{*/
+    /*  transform: translateX(-5px)*/
+    /*  transform: translateY(2450px)*/
+    /*  }*/
+    /*}*/
+    #second-highway{
+      background-image: url('https://image.shutterstock.com/image-vector/template-set-straight-asphalt-roads-260nw-552600922.jpg');
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="audio">
+      <audio loop autoplay>
+        <source src="sound.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="good" id="completed">
+     <div class="completed">
+       
+    <div class="class">
+ <img src="https://www.nicepng.com/png/full/254-2547288_share-car-without-wheels-png.png" alt="" class="li"/>     
+    </div>
+    <div id="wheels">
+      <img src="http://clipart-library.com/image_gallery2/Car-Wheel-Free-Download-PNG.png" alt="" class="wheels" id="animate"/>
+      
+    </div>
+    <div class="second-wheel">
+ <img src="http://clipart-library.com/image_gallery2/Car-Wheel-Free-Download-PNG.png" alt="" class="wheel" id="animate"  />     
+    </div>
+     </div> 
+    </div>
+
+    <div class="highway">
+    <img src="Blue highway.jpg" alt="" class="highwa"/>
+    <!-- THIS IS FOR SECOND HIGHWAY..
+    <img src="Blue highway.jpg" alt="" class="highwa"/>-->
+  
+ <!--   </div>-->
+    <div class="second-highway" id="second-highway">
+      <img src="https://image.shutterstock.com/image-vector/template-set-straight-asphalt-roads-260nw-552600922.jpg" alt="" class="secondhighway" width="1000px" height="1000px" />
+    </div>
+    
+      <!--  <div class="background">-->
+  <!--<img src="https://www.securityroundtable.org/wp-content/uploads/2018/07/AdobeStock_103287945-490x327.jpeg"class="llb"  height="1050px" />    -->
+  <!--  </div>-->
+  </body>
+</html>
